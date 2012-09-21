@@ -249,10 +249,41 @@ a.infopopup:hover div.desc { display:block; }
 #map_stcecilias {background:url(/content/s0000xcu/images/maps/stcecilias.jpg);}
 #map_verdenstudios {background:url(/content/s0000xcu/images/maps/verdenstudios.jpg);}
 
+/* arrows
+---------------------------*/
+#map_archie #nodeprev a {background:url(/content/s0000xcu/images/arrows/archie_backwards.jpg) no-repeat;}
+#map_ben #nodeprev a {background:url(/content/s0000xcu/images/arrows/ben_backwards.jpg) no-repeat;}
+#map_elizabeth #nodeprev a {background:url(/content/s0000xcu/images/arrows/elizabeth_backwards.jpg) no-repeat;}
+#map_francesca #nodeprev a {background:url(/content/s0000xcu/images/arrows/francesca_backwards.jpg) no-repeat;}
+#map_hendersons #nodeprev a {background:url(/content/s0000xcu/images/arrows/hendersons_backwards.jpg) no-repeat;}
+#map_jen #nodeprev a {background:url(/content/s0000xcu/images/arrows/jen_backwards.jpg) no-repeat;}
+#map_johan #nodeprev a {background:url(/content/s0000xcu/images/arrows/johan_backwards.jpg) no-repeat;}
+#map_kate #nodeprev a {background:url(/content/s0000xcu/images/arrows/kate_backwards.jpg) no-repeat;}
+#map_kristina #nodeprev a {background:url(/content/s0000xcu/images/arrows/kristina_backwards.jpg) no-repeat;}
+#map_robert #nodeprev a {background:url(/content/s0000xcu/images/arrows/robert_backwards.jpg) no-repeat;}
+#map_royalbritannia #nodeprev a {background:url(/content/s0000xcu/images/arrows/royalbritannia_backwards.jpg) no-repeat;}
+#map_stcecilias #nodeprev a {background:url(/content/s0000xcu/images/arrows/stcecilias_backwards.jpg) no-repeat;}
+#map_verdenstudios #nodeprev a {background:url(/content/s0000xcu/images/arrows/verdenstudios_backwards.jpg) no-repeat;}
+
+#map_archie #nodenext a {background:url(/content/s0000xcu/images/arrows/archie_forwards.jpg) no-repeat;}
+#map_ben #nodenext a {background:url(/content/s0000xcu/images/arrows/ben_forwards.jpg) no-repeat;}
+#map_elizabeth #nodenext a {background:url(/content/s0000xcu/images/arrows/elizabeth_forwards.jpg) no-repeat;}
+#map_francesca #nodenext a {background:url(/content/s0000xcu/images/arrows/francesca_forwards.jpg) no-repeat;}
+#map_hendersons #nodenext a {background:url(/content/s0000xcu/images/arrows/hendersons_forwards.jpg) no-repeat;}
+#map_jen #nodenext a {background:url(/content/s0000xcu/images/arrows/jen_forwards.jpg) no-repeat;}
+#map_johan #nodenext a {background:url(/content/s0000xcu/images/arrows/johan_forwards.jpg) no-repeat;}
+#map_kate #nodenext a {background:url(/content/s0000xcu/images/arrows/kate_forwards.jpg) no-repeat;}
+#map_kristina #nodenext a {background:url(/content/s0000xcu/images/arrows/kristina_forwards.jpg) no-repeat;}
+#map_robert #nodenext a {background:url(/content/s0000xcu/images/arrows/robert_forwards.jpg) no-repeat;}
+#map_royalbritannia #nodenext a {background:url(/content/s0000xcu/images/arrows/royalbritannia_forwards.jpg) no-repeat;}
+#map_stcecilias #nodenext a {background:url(/content/s0000xcu/images/arrows/stcecilias_forwards.jpg) no-repeat;}
+#map_verdenstudios #nodenext a {background:url(/content/s0000xcu/images/arrows/verdenstudios_forwards.jpg) no-repeat;}
+
+
 
 /* nodenames
 ---------------------------*/
-/*these will be hidden*/
+/*these have been hidden*/
 #nodename {position:absolute;font-size:50px;line-height:120%}
 .textshadow #nodename {text-shadow: 0px 0px 10px white;}
 .textshadow.rgba #nodename {text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);}
@@ -271,6 +302,7 @@ a.infopopup:hover div.desc { display:block; }
 #map_stcecilias #nodename {left:236px;top:380px;}
 #map_verdenstudios #nodename {left:349px;top:8px;}
 
+#nodename { display:none; }
 
 /* video and textbox
 ---------------------------*/
@@ -389,12 +421,10 @@ a.infopopup:hover div.desc { display:block; }
 .left a {
 	width:146px;
 	height:71px;
-	background:url(/content/s0000xcu/images/arrow-left.png) no-repeat;
 }
 .right a {
 	width:146px;
 	height:71px;
-	background:url(/content/s0000xcu/images/arrow-right.png) no-repeat;
 }
 
 #map_archie #nodeprev {left:0px;top:369px;}
