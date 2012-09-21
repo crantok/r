@@ -1,0 +1,6 @@
+#Options for BBC testing
+#<Directory /imogen-static>
+#Order allow,deny
+#allow from all
+#Options -Indexes +MultiViews
+#</Directory>

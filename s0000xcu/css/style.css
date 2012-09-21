@@ -1,0 +1,474 @@
+/* CSS for You Know Where to Find Me
+Built by RajRoy@RoburTV */
+
+/* Reset =================================================== */
+html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,
+sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,
+caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,
+hgroup,menu,nav,section,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+article,aside,figure,footer,header,hgroup,nav,section {
+  display: block;
+}
+
+
+/* fonts 
+---------------------------*/
+h1, h2, #nodename  {
+	font-family: 'im_fell_english_proregular', Georgia, serif;
+	color:#333;
+}
+h1 {
+	font-weight:normal;
+	font-size:55px;
+	margin:0;
+}
+.textshadow h1 {text-shadow: 0px 0px 10px white;}
+h2 {
+	font-weight:normal;
+}
+h3 {
+	font-size:16px;
+	padding-bottom:10px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	/*color:#333;*/
+	color:#598393;
+}
+p, a.infopopup, .sitemap {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	line-height:140%;
+}
+a {
+	text-decoration:none;
+}
+body {
+	margin:0 auto;
+}
+#chapter-controls {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+#chapter-controls a:hover {
+	text-decoration:underline;	
+}
+
+/* header 
+---------------------------*/
+header {
+	margin:0 auto;
+	width:960px;
+	padding:10px 0;
+}
+header p {
+	background:url(/content/s0000xcu/images/space-logo_80.png) no-repeat;
+	text-indent:-999px;
+	height:80px;
+}
+header h1 {
+	display:inline;
+	/*padding-left:30px;*/
+}
+
+
+/* content
+---------------------------*/
+.content {
+	margin:0 auto;
+	width:960px;
+}
+.mapholder {
+	position:relative;
+	width:960px;
+	height:600px;
+}
+#heading {
+	position:absolute;
+	left:15px;
+	top:464px;
+}
+a.infopopup { 
+	position:absolute; 
+	left:10px; top:10px;
+	background:white; 
+	font-size:18px; 
+	padding:3px; 
+	border-radius:25px;
+	width:25px; 
+	height:25px;
+	text-align:center;
+}
+.boxshadow a.infopopup {
+	box-shadow:0 0 10px #999;
+}
+.no-boxshadow a.infopopup {
+	border:1px solid #CCC;
+}
+
+a.infopopup div.desc {
+	background-color:white; 
+	/*background:url('/content/s0000xcu/images/infopopup_background.png');*/
+	color:#333;
+	display:none; 
+	position:absolute; 
+	z-index:100; 
+	left:30px; 
+	top:30px; 
+	padding:20px;
+	width: 320px;
+	height:120px;
+	font-size:14px;
+}
+a.infopopup:hover div.desc { display:block; }
+
+#sitemap {
+	position:absolute;
+	padding:30px;
+	left:100px;
+	top:100px;
+	width:700px;
+	height:380px;
+	background:white;
+}
+.rgba #sitemap {
+	background:rgba(255,255,255,0.8);
+}
+
+
+/* main map icons
+---------------------------*/
+.overlay {
+	position:absolute;
+}
+.overlay a {
+	display:block;
+	width:50px;
+	height:50px;
+	opacity:0.7;
+}
+.lt-ie9 .overlay a {
+	filter: alpha(opacity=70);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.csstransitions .overlay a {
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	transition:all 0.2s ease-in-out;
+}
+.overlay a:hover {
+	opacity:1;
+	text-decoration:none;
+}
+.lt-ie9 .overlay a:hover {
+	filter: alpha(opacity=100);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.csstransforms .overlay a:hover {
+	-moz-transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	-ms-transform:scale(1.1);
+	transform:scale(1.1);
+}
+.no-csstransforms .overlay a:hover {
+	border:1px dotted #CCC;	
+}
+.overlay.electric a {
+	background: url(/content/s0000xcu/images/icon_electric.png) no-repeat;	
+	width:54px;
+	height:47px;
+}
+.overlay.electric a:hover {
+	background: url(/content/s0000xcu/images/icon_electric.png) no-repeat;
+}
+.overlay.grand a {
+	background: url(/content/s0000xcu/images/icon_grand.png) no-repeat;	
+	width:52px;
+	height:52px;
+}
+.overlay.grand a:hover {
+	background: url(/content/s0000xcu/images/icon_grand.png) no-repeat;
+}
+.overlay.ships a {
+	background: url(/content/s0000xcu/images/icon_ships.png) no-repeat;	
+	width:43px;
+	height:44px;
+}
+.overlay.ships a:hover {
+	background: url(/content/s0000xcu/images/icon_ships.png) no-repeat;
+}
+.overlay.upright a {
+	background: url(/content/s0000xcu/images/icon_upright.png) no-repeat;	
+	width:41px;
+	height:47px;
+}
+.overlay.upright a:hover {
+	background: url(/content/s0000xcu/images/icon_upright.png) no-repeat;
+}
+
+
+/* main map icon position
+---------------------------*/
+#linkmap_archie {top:169px;left:522px;}
+#linkmap_ben {top:295px;left:458px;}
+#linkmap_elizabeth {top:427px;left:310px;}
+#linkmap_francesca {top:233px;left:508px;}
+#linkmap_hendersons {top:183px;left:430px;}
+#linkmap_jen {top:224px;left:387px;}
+#linkmap_johan {top:169px;left:366px;}
+#linkmap_kate {top:139px;left:430px;}
+#linkmap_kristina {top:110px;left:475px;}
+#linkmap_robert {top:268px;left:411px;}
+#linkmap_royalbritannia {top:29px;left:488px;}
+#linkmap_stcecilias {top:212px;left:450px;}
+#linkmap_verdenstudios {top:169px;left:678px;}
+
+
+/* map backgrounds
+---------------------------*/
+#map_edinburgh {background:url(/content/s0000xcu/images/maps/edinburgh.jpg);}
+
+#map_archie {background:url(/content/s0000xcu/images/maps/archie.jpg);}
+#map_ben {background:url(/content/s0000xcu/images/maps/ben.jpg);}
+#map_elizabeth {background:url(/content/s0000xcu/images/maps/elizabeth.jpg);}
+#map_francesca {background:url(/content/s0000xcu/images/maps/francesca.jpg);}
+#map_hendersons {background:url(/content/s0000xcu/images/maps/hendersons.jpg);}
+#map_jen {background:url(/content/s0000xcu/images/maps/jen.jpg);}
+#map_johan {background:url(/content/s0000xcu/images/maps/johan.jpg);}
+#map_kate {background:url(/content/s0000xcu/images/maps/kate.jpg);}
+#map_kristina {background:url(/content/s0000xcu/images/maps/kristina.jpg);}
+#map_robert {background:url(/content/s0000xcu/images/maps/robert.jpg);}
+#map_royalbritannia {background:url(/content/s0000xcu/images/maps/royalbritannia.jpg);}
+#map_stcecilias {background:url(/content/s0000xcu/images/maps/stcecilias.jpg);}
+#map_verdenstudios {background:url(/content/s0000xcu/images/maps/verdenstudios.jpg);}
+
+
+/* nodenames
+---------------------------*/
+/*these will be hidden*/
+#nodename {position:absolute;font-size:50px;line-height:120%}
+.textshadow #nodename {text-shadow: 0px 0px 10px white;}
+.textshadow.rgba #nodename {text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);}
+
+#map_archie #nodename {left:403px;top:458px;}
+#map_ben #nodename {left:327px;top:462px;}
+#map_elizabeth #nodename {left:547px;top:236px;}
+#map_francesca #nodename {left:168px;top:440px;}
+#map_jen #nodename {left:610px;top:437px;}
+#map_johan #nodename {left:539px;top:342px;}
+#map_kate #nodename {left:749px;top:19px;}
+#map_kristina #nodename {left:386px;top:9px;}
+#map_hendersons #nodename {left:546px;top:476px;}
+#map_robert #nodename {left:155px;top:257px;}
+#map_royalbritannia #nodename {left:35px;top:142px;}
+#map_stcecilias #nodename {left:236px;top:380px;}
+#map_verdenstudios #nodename {left:349px;top:8px;}
+
+
+/* video and textbox
+---------------------------*/
+#playerbox {
+	position:absolute;
+	width:320px;
+	height:180px;
+	background:white;
+}
+#textoverlay {
+	position:absolute;
+	background-color: white;
+	width:300px;
+	padding:2px 10px;
+}
+.rgba #textoverlay {
+	background-color: rgba(255,255,255,0.5);
+}
+#textoverlay p {
+	margin-bottom:0;
+}
+
+
+#map_archie #playerbox {top:58px; left:36px;}
+#map_archie #textoverlay {top:238px;left:36px;}
+#map_ben #playerbox {top:188px; left:88px;}
+#map_ben #textoverlay {top:368px;left:88px;}
+#map_elizabeth #playerbox {top:289px; left:19px;}
+#map_elizabeth #textoverlay {top:469px;	left:19px;}
+#map_francesca #playerbox {top:139px; left:166px;}
+#map_francesca #textoverlay {top:319px;	left:166px;}
+#map_hendersons #playerbox {top:216px; left:375px;}
+#map_hendersons #textoverlay {top:396px;left:375px;}
+#map_jen #playerbox {top:137px; left:158px;}
+#map_jen #textoverlay {top:317px;left:158px;}
+#map_johan #playerbox {top:307px; left:59px;}
+#map_johan #textoverlay {top:487px;left:59px;}
+#map_kate #playerbox {top:33px; left:112px;}
+#map_kate #textoverlay {top:213px;left:112px;}
+#map_kristina #playerbox {top:14px; left:601px;}
+#map_kristina #textoverlay {top:194px;left:601px;}
+#map_royalbritannia #playerbox {top:32px; left:601px;}
+#map_royalbritannia #textoverlay {top:212px; left:601px;}
+#map_robert #playerbox {top:72px; left:316px;}
+#map_robert #textoverlay {top:252px; left:316px;}
+#map_stcecilias #playerbox {top:34px; left:49px;}
+#map_stcecilias #textoverlay {top:214px; left:49px;}
+#map_verdenstudios #playerbox {top:316px; left:190px;}
+#map_verdenstudios #textoverlay {top:496px; left:190px;}
+
+ 
+/*-- navigation
+---------------------------*/
+#minimap a{
+	position:absolute;
+	width:80px;
+	height:50px;
+	z-index:10;
+	bottom:30px;
+	right:30px;
+	/*margin-left:20px;
+	margin-top:20px;*/
+	border:0px solid red;
+	opacity:0.7;
+}
+.csstransitions #minimap a {
+	-webkit-transition:all 0.2s ease-out;
+	-moz-transition:opacity 0.2s ease-out;
+	transition:opacity 0.2s ease-out;
+}
+#minimap a:hover {
+	opacity:1.0;
+}
+.no-boxshadow #minimap a:hover {
+	border-right:1px solid #666;
+	border-bottom:1px solid #000;
+}
+.boxshadow #minimap a:hover {
+	box-shadow:0 0 5px black;
+	box-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+
+.arrow {
+	position:absolute;
+}
+.arrow a {
+	display:block;
+	opacity:0.7;
+}
+.lt-ie9 .arrow a {
+	filter: alpha(opacity=70);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.csstransitions .arrow a {
+	-webkit-transition:opacity 0.2s ease-out;
+	-moz-transition:opacity 0.2s ease-out;
+	transition:opacity 0.2s ease-out;
+}
+.down a:hover, .up a:hover, .left a:hover, .right a:hover {
+	opacity:1;
+}
+.lt-ie9 .down a:hover, .lt-ie9 .up a:hover, .lt-ie9 .left a:hover, .lt-ie9 .right a:hover {
+	filter: alpha(opacity=100);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.down a {
+	width:71px;
+	height:146px;
+	background:url(/content/s0000xcu/images/arrow-down2.png) no-repeat;
+}
+.up a {
+	width:71px;
+	height:146px;
+	background:url(/content/s0000xcu/images/arrow-up.png) no-repeat;
+}
+.left a {
+	width:146px;
+	height:71px;
+	background:url(/content/s0000xcu/images/arrow-left.png) no-repeat;
+}
+.right a {
+	width:146px;
+	height:71px;
+	background:url(/content/s0000xcu/images/arrow-right.png) no-repeat;
+}
+
+#map_archie #nodeprev {left:0px;top:369px;}
+#map_archie #nodenext {right:0px;top:69px;}
+#map_ben #nodeprev {left:0px;top:502px;}
+#map_ben #nodenext {right:0px;top:14px;}
+#map_elizabeth #nodeprev {left:0px;top:198px;}
+#map_elizabeth #nodenext {right:0px;top:292px;}
+#map_francesca #nodeprev {left:0px;top:369px;}
+#map_francesca #nodenext {right:0px;top:352px;}
+#map_hendersons #nodeprev {left:0px;top:145px;}
+#map_hendersons #nodenext {} /*no next node*/
+#map_jen #nodeprev {left:0px;top:314px;}
+#map_jen #nodenext {right:0px;top:364px;}
+#map_johan #nodeprev {left:0px;top:177px;}
+#map_johan #nodenext {right:0px;top:352px;}
+#map_kate #nodeprev {left:0px;top:321px;}
+#map_kate #nodenext {right:0px;top:229px;}
+#map_kristina #nodeprev {left:0px;top:338px;}
+#map_kristina #nodenext {right:0px;top:398px;}
+#map_robert #nodeprev {left:0px;top:228px;}
+#map_robert #nodenext {right:0px;top:352px;}
+#map_royalbritannia #nodeprev {} /*no previous node*/
+#map_royalbritannia #nodenext {right:0px;top:352px;}
+#map_stcecilias #nodeprev {left:0px;top:499px;}
+#map_stcecilias #nodenext {right:0px;top:257px;}
+#map_verdenstudios #nodeprev {left:0px;top:206px;}
+#map_verdenstudios #nodenext {right:0px;top:332px;}
+
+
+/* footer credits
+---------------------------*/
+footer {
+	margin:0px auto 0;
+	width:960px;
+	/*background:url(/content/s0000xcu/images/footer-logos_off.png);*/
+	height:100px;
+}
+#credits a {
+	width:192px;
+	height:100px;
+	display:block;
+	float:left;
+}
+.footerlink {
+	text-indent:-9999px;
+}
+.footerlink.thespace {
+	background:url(/content/s0000xcu/images/footer_thespace.png);
+}
+a:hover.footerlink.thespace {
+	background:url(/content/s0000xcu/images/footer_thespace_on.png) no-repeat;
+	text-decoration:none;
+}
+.footerlink.imogen {
+	background:url(/content/s0000xcu/images/footer_imogen.png);
+}
+.footerlink.robur {
+	background:url(/content/s0000xcu/images/footer_roburtv.png);
+}
+.footerlink.artangel {
+	background:url(/content/s0000xcu/images/footer_artangel.png);
+}
+.sitemap {
+	text-align:center;
+	padding-top:46px;
+	color:black;
+}
+a:hover.sitemap span {
+	background-color:#aec7b1;
+	padding:2px;
+}
+/*.csstransitions #credits a {
+	-webkit-transition:all 0.2s ease-out;
+	-moz-transition:all 0.2s ease-out;
+	transition:all 0.2s ease-out;
+}*/
